@@ -1,0 +1,16 @@
+body{
+    background:url(0.jpg);
+    background-size: cover;
+    padding-left: 400px;
+}
+input , button ,ul{
+    font-size: 40px;
+    
+}
+input{
+    background:plum;
+    border: black 3px solid;
+}
+button{
+    background:transparent;
+}

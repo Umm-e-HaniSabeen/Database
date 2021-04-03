@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- yaha firebase ka link lazmi laga lena or meri is line ko hata dena -->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBWzEijjOtWhRBDfZ9oMhkVdjNnPA7S3OQ",
+    authDomain: "database-h-60064.firebaseapp.com",
+    databaseURL: "https://database-h-60064-default-rtdb.firebaseio.com",
+    projectId: "database-h-60064",
+    storageBucket: "database-h-60064.appspot.com",
+    messagingSenderId: "1068971388477",
+    appId: "1:1068971388477:web:e6c6f366f389c0764a4454",
+    measurementId: "G-R8DRNPK33L"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div>
+    <input placeholder="Enter todo" type="text" id="todo-item">
+    <br>
+    <br>
+    <button onclick="addTodo()">ADD ITEM</button>
+    <button onclick="deleteAll()">DELETE ALL</button>
+</div>
+
+<div>
+    <ul id="list">
+
+    </ul>
+</div>
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
